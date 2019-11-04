@@ -133,6 +133,7 @@ RSpec.describe GramsController, type: :controller do
 
   describe "grams#new action" do
     it "should require users to be logged in" do
+      <%= f.input :picture %>
       get :new
       expect(response).to redirect_to new_user_session_path
     end
